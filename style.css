@@ -36,6 +36,51 @@ body * {
     color: #00000094;
 }
 
+.movil{
+    position: relative;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #EB0029;
+    color: #FFFFFF;
+    width: 70px;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+}
+
+.ali{
+    position: relative;
+
+    position: absolute;
+    top: 0;
+    right: 100px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.mapa{
+    position: relative;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 90px;
+    padding: 10px 10px;
+}
+
+.under{
+    position: relative;
+
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
 .btn-login {
     width: 100%;
     padding: 16px 0px;
