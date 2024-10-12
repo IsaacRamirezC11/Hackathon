@@ -192,3 +192,18 @@ body * {
         width: 90;
     }
 }
+
+@media (min-width: 600px) {
+    .main-login {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-login, .right-login {
+        width: 48%;
+    }
+
+    .card-login {
+        width: 100%;
+    }
+}
