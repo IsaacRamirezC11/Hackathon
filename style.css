@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
+@font-face{
+    font-family: gotham-light;
+    src: url('gotham-light.ttf');
+    }
 body {
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'gotham-ligth';
 }
 
 body * {
@@ -353,4 +355,87 @@ footer p {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 110%;
+    
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textfield > input::placeholder {
+    color: #00000094;
+}
+
+.movil{
+    position: relative;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #EB0029;
+    color: #FFFFFF;
+    width: 70px;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+}
+
+.ali{
+    position: relative;
+
+    position: absolute;
+    top: 0;
+    right: 100px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.mapa{
+    position: relative;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 90px;
+    padding: 10px 10px;
+
+    
+}
+
+.under{
+    position: relative;
+
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    font-family: 'Noto Sans', sans-serif;
 }
