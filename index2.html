@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistente virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Asistente Virtual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Banner de Banorte -->
+        <header class="banner">
+            <div class="logo">
+                <img src="https://investorday.banorte.com/media/vnunx2qm/logo-mobile.png" alt="Banorte Logo">
+            </div>
+
+            <!-- Botón para cerrar sesión -->
+            <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+     
+
+            <nav class="nav-menu">
+                <ul>
+                    
+                </ul>
+            </nav>
+            <div class="icons">
+                
+                <a href="#"><img src="data:image/png;base64,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" alt="Location"></a>
+                
+            </div>
+        </header>
+        
+        <!-- Contenido del Asistente Virtual -->
+        <header>
+            <h1>Asistente Virtual Banorte</h1>
+        </header>
+        <main>
+            <div class="chat-box">
+             
+            </div>
+            <input type="text" class="input-field" placeholder="Escribe tu mensaje...">
+            <button class="send-button">Enviar</button>
+        </main>
+        <footer>
+            <p>&copy; 2024 Banorte. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <!-- Script para manejar el botón de cerrar sesión -->
+    <script>
+        function logout() {
+            window.location.href = 'index.html'; // Redirige a la página de inicio (index.html)
+        }
+    </script>
 </body>
 </html>

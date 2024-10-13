@@ -214,3 +214,143 @@ body * {
 
 /* interfaz */
 
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D71A1B;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+.icons img {
+    height: 24px;
+}
+
+/* Asistente Virtual Styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #D71A1B;
+    color: white;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #e0e0e0;
+    color: #333;
+    text-align: right;
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #D71A1B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+}
+
+.logout-btn{
+    border-radius: 5px;
+    color: rgb(17, 16, 16); /* Cambia el color del texto a blanco */
+    background-color: #ffffff; /* Puedes mantener o cambiar el color de fondo */
+    border: none; /* Esto elimina los bordes, si es necesario */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
